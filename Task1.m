@@ -3,7 +3,8 @@ i = 1;
 for x = 1:28
     if X(x) == 1
         encode(i:i+99) = 5;
-    else if X(x) == 0
+    else 
+        if X(x) == 0
             encode(i:i+99) = 0;
         end
     end
