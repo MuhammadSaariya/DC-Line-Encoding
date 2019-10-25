@@ -4,7 +4,8 @@ for x = 1:length(X)
     if X(x) == 0
             encode(i+1:i+50) = 5;
             encode(i+51:i+100) = -5;
-    else if X(x) == 1
+    else 
+        if X(x) == 1
             encode(i+1:i+50) = -5;
             encode(i+51:i+100) = 5;
         end
